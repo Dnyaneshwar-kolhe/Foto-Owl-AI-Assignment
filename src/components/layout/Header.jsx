@@ -1,11 +1,11 @@
 import React from "react";
 import { Sparkles, RefreshCw } from "lucide-react";
-// import { useUserIdentity } from '../../hooks/useUserIdentity'
-// import useAppStore from '../../store/useAppStore'
-// import Avatar from '../ui/Avatar'
+import { useUserIdentity } from '../../hooks/useUserIdentity'
+import useAppStore from '../../store/useAppStore'
+import Avatar from '../ui/Avatar'
 function Header() {
-    // const { userName, userColor } = useUserIdentity();
-    // const regenerateIdentity = useAppStore((s) => s.regenerateIdentity);
+    const { userName, userColor } = useUserIdentity();
+    const regenerateIdentity = useAppStore((s) => s.regenerateIdentity);
 
 
     return (
@@ -25,16 +25,16 @@ function Header() {
                       User
                     </span>
                     <span className="text-sm font-medium text-text-primary">
-                        {/* {userName} */}
+                        {userName}
                     </span>
                 </div>
 
                 <button
-                    // onClick={regenerateIdentity}
+                    onClick={regenerateIdentity}
                     className="group relative"
                     title="Regenerate identity"
                 >
-                    {/* <Avatar name={userName} color={userColor} size="md" /> */}
+                    <Avatar name={userName} color={userColor} size="md" />
 
                     <div className="absolute inset-0 rounded-full bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                         <RefreshCw className="w-3.5 h-3.5 text-white" />
