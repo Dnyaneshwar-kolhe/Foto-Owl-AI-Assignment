@@ -1,7 +1,7 @@
 import React from "react";
 import Header from './Header';
 import Sidebar from './Sidebar';
-// import ImageModal from '../gallery/ImageModal';
+import ImageModal from '../gallery/ImageModal';
 
 // @param {Object} props
 // @param {React.ReactNode} props.children
@@ -22,7 +22,7 @@ function AppLayout({children}){
          <Sidebar/>
         </main>
 
-    {/* <ImageModal/> */}
+    <ImageModal/>
      </div>
 
     )
