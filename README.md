@@ -6,7 +6,7 @@ Built for the **React Intern Assignment – Foto Owl Ai**.
 
 ## 🚀 Live Demo
 
-[Link to Live Deployed Application](https://your-vercel-or-netlify-url.app)
+[Link to Live Deployed Application](https://fotoowlai.vercel.app)
 
 ## 🛠 Tech Stack
 
@@ -23,7 +23,7 @@ Built for the **React Intern Assignment – Foto Owl Ai**.
 
 1. **Clone the repository:**
    ```bash
-   git clone <repository-url>
+   git clone [<repository-url>](https://github.com/Dnyaneshwar-kolhe/Foto-Owl-AI-Assignment.git)
    cd "Assignment Foto Owl"
    ```
 
